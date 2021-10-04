@@ -1,0 +1,162 @@
+package in.co.rays.ORSProject4.test;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+
+import in.co.rays.ORSProject4.bean.FacultyBean;
+import in.co.rays.ORSProject4.model.FacultyModel;
+
+public class FacultyModelTest {
+	public static FacultyModel model = new FacultyModel();
+
+	public static void main(String[] args) throws ParseException,Exception {
+		// TODO Auto-generated method stub
+		//testAdd();
+		testUpdate();
+		//testDelete();
+		//testfindByPk();
+		//testfindByEmail();
+		//testSearch();
+		//testList();
+	}
+public static void testfindByPk() throws Exception {
+		
+		FacultyBean bean = new FacultyBean();
+ 
+		bean= model.findByPK(1);
+		System.out.print("\t"+bean.getId());
+		System.out.print("\t"+bean.getFirstName());
+		System.out.print("\t"+bean.getLastName());
+		System.out.print("\t"+bean.getGender());
+		
+		System.out.print("\t"+bean.getMobileNo());
+		System.out.print("\t"+bean.getCollegeId());
+		System.out.print("\t"+bean.getCollegeName());
+		System.out.print("\t"+bean.getCourseId());
+		System.out.print("\t"+bean.getCourseName());
+		System.out.print("\t"+bean.getSubjectId());
+		System.out.print("\t"+bean.getSubjectName());
+		System.out.print("\t"+bean.getCreatedBy());
+		System.out.print("\t"+bean.getModifiedBy());
+		System.out.print("\t"+bean.getCreatedDatetime());
+		System.out.println("\t"+bean.getModifiedDatetime());
+	}
+public static void testfindByEmail(){
+	
+	FacultyBean bean = new FacultyBean();
+	
+	try {
+		bean= model.findByEmail("anisha@gmail.com");
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	System.out.println(bean.getFirstName());
+	System.out.println(bean.getLastName());
+}
+public static void testAdd() throws ParseException {
+	FacultyBean bean = new FacultyBean();
+
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
+
+	Date d = new Date();
+	
+	bean.setFirstName("Aditi1");
+	bean.setLastName("Sharma1");
+	
+	bean.setEmail("Aditi1@gmail.com");
+	bean.setCollegeId(7);
+	bean.setCourseId(7);
+	bean.setSubjectId(7);
+	
+    //bean.setDateOfJoining(sdf.parse("10/11/1999"));
+	try {
+		model.add(bean);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+public static void testUpdate() throws Exception {
+	FacultyBean bean = new FacultyBean();
+
+	
+	Date d = new Date();
+	SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+	
+	bean.setId(2);
+	bean.setFirstName("gitanshi43");
+	bean.setLastName("sahu");
+	bean.setEmail("Gitanshi44@yahoo.com");
+	bean.setCollegeId(6);
+	bean.setCourseId(1);
+	bean.setSubjectId(1);
+
+	bean.setQualification("PhD");
+	bean.setMobileNo("987665444");
+	bean.setDateOfJoining(sdf.parse("20-08-1988"));
+	System.out.println("updated");
+	
+	model.update(bean);
+	
+}
+
+public static void testDelete() throws Exception {
+	FacultyBean bean = new FacultyBean();
+
+	bean.setId(5);
+	
+	model.delete(bean);
+	System.out.println("record deleted");
+}
+
+public static void testSearch() throws Exception{
+	
+	List list = new ArrayList();
+	
+	FacultyBean bean=new FacultyBean();
+	
+
+	list = model.search(bean,0,0);
+	
+	bean.setId(1);
+	Iterator<FacultyBean> it = list.iterator();
+	while(it.hasNext()){
+		bean= it.next();
+		
+		System.out.println(bean.getFirstName());
+		System.out.println(bean.getLastName());
+		System.out.println(bean.getGender());
+		System.out.println(bean.getDateOfJoining());
+		
+	}
+}
+
+public static void testList() throws Exception{
+	
+	List list = new ArrayList();
+	
+	FacultyBean bean=new FacultyBean();
+	
+
+	list = model.list(0,0);
+	
+	bean.setId(1);
+	Iterator<FacultyBean> it = list.iterator();
+	while(it.hasNext()){
+		bean= it.next();
+		
+		System.out.println(bean.getFirstName());
+		System.out.println(bean.getLastName());
+		System.out.println(bean.getGender());
+		System.out.println(bean.getDateOfJoining());
+		
+	}
+}
+
+
+}

@@ -1,0 +1,14 @@
+127.0.0.1 - - [22/Sep/2021:14:07:19 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:07:24 +0530] "GET /ORSProject4/ HTTP/1.1" 200 527
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:07:48 +0530] "GET /ORSProject4/ HTTP/1.1" 200 527
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:07:51 +0530] "GET /ORSProject4/WelcomeCtl HTTP/1.1" 200 1885
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:07:52 +0530] "GET /resources/demos/style.css HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:07:54 +0530] "GET /ORSProject4/LoginCtl HTTP/1.1" 200 3516
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:07:54 +0530] "GET /resources/demos/style.css HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:07 +0530] "POST /ORSProject4/LoginCtl HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:07 +0530] "GET /ORSProject4/WelcomeCtl HTTP/1.1" 200 3406
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:07 +0530] "GET /resources/demos/style.css HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:11 +0530] "GET /ORSProject4/ctl/GetMarksheetCtl HTTP/1.1" 200 4018
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:11 +0530] "GET /resources/demos/style.css HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:44 +0530] "POST /ORSProject4/ctl/GetMarksheetCtl HTTP/1.1" 200 6411
+0:0:0:0:0:0:0:1 - - [22/Sep/2021:14:08:44 +0530] "GET /resources/demos/style.css HTTP/1.1" 404 1107

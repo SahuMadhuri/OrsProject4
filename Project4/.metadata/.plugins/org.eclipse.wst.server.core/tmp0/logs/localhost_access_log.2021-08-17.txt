@@ -1,0 +1,13 @@
+127.0.0.1 - - [17/Aug/2021:02:51:54 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:51:58 +0530] "GET /ORSProject4/ HTTP/1.1" 200 549
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:01 +0530] "GET /ORSProject4/WelcomeCtl HTTP/1.1" 200 1701
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:05 +0530] "GET /ORSProject4/LoginCtl HTTP/1.1" 200 3332
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:11 +0530] "GET /ORSProject4/ForgetPasswordCtl HTTP/1.1" 200 2568
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:11 +0530] "GET /ORSProject4/ForgetPasswordCtl HTTP/1.1" 200 2568
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:28 +0530] "POST /ORSProject4/ForgetPasswordCtl HTTP/1.1" 200 2588
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:34 +0530] "GET /ORSProject4/LoginCtl HTTP/1.1" 200 3332
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:45 +0530] "POST /ORSProject4/LoginCtl HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:45 +0530] "GET /ORSProject4/UserRegistrationCtl HTTP/1.1" 200 5126
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:52:58 +0530] "GET /ORSProject4/LoginCtl HTTP/1.1" 200 3332
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:53:29 +0530] "POST /ORSProject4/LoginCtl HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:02:53:29 +0530] "GET /ORSProject4/WelcomeCtl HTTP/1.1" 200 3222
